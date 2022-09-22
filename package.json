@@ -1,0 +1,16 @@
+{
+  "name": "interview-9-22-22",
+  "version": "1.0.0",
+  "description": "interview assessment",
+  "main": "index.js",
+  "author": "Nate Folsom <nate@rhombussystems.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jotai": "^1.8.4",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "react-testing-library": "^8.0.1"
+  }
+}

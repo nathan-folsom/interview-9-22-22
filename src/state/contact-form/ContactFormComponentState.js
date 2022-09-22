@@ -41,7 +41,7 @@ const validations = [
   }
 ]
 
-const failedValidationAtom = atom(get => undefined) // TODO: Iterate over validations and find failure(s) that can be shown to the user
+const failedValidationAtom = atom(get => undefined) // TODO: Iterate over validations and find failure(s) (so that we can notify the user)
 
 export default {
   FormFieldState: {

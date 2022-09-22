@@ -21,6 +21,11 @@ const missingPhoneAtom = atom( get => get(phoneNumberAtom).length);
 
 const missingEmailAtom = atom( get => get(emailAtom).length);
 
+// TODO validate the format of the email
+// const invalidEmailAtom = atom(get => {
+//   const email = get(emailAtom);
+// });
+
 const validations = [
   {
     conditionAtom: missingNameAtom,
@@ -36,7 +41,7 @@ const validations = [
   }
 ]
 
-const failedValidationAtom = atom(get => undefined) // TODO: Iterate over validations and find failure
+const failedValidationAtom = atom(get => undefined) // TODO: Iterate over validations and find failure(s) that can be shown to the user
 
 export default {
   FormFieldState: {

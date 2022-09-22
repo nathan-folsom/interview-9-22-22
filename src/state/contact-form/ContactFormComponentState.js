@@ -5,6 +5,15 @@ import {atom} from "jotai";
  * pieces:
  *  1) Input values
  *  2) Validation
+ *
+ *  This type of file allows component and business logic to be defined and tested in one place, and then shared
+ *  across multiple React applications that share similar functionality or interact with the same apis. This can be seen
+ *  throughout the Rhombus frontend repository; the web console is a React app, and there are mobile, ipad, and appletv
+ *  apps running React Native.
+ *
+ *  This allows for dramatic decreases in development time for features that are implemented across multiple applications,
+ *  as well as increasing the robustness of the code. Dependency on slow, heavy testing frameworks that rely on analyzing
+ *  rendered content is also greatly reduced.
  */
 
 // Input values
